@@ -1,3 +1,4 @@
+console.log("App.js working")
 $(function () {
 
 	// Get the form.

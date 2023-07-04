@@ -1,3 +1,4 @@
+console.log("stt.js working")
 function topScroll() {
     if (document.querySelector("html").getBoundingClientRect().top < -100) {
         document.querySelector(".scrolltotop").classList.remove("scrolltotop-invisible")

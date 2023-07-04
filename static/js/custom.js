@@ -18,7 +18,7 @@
 
 **/
 
-
+console.log("cust.js working")
 
 (function( $ ){
 

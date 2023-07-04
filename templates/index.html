@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Colloquium-2023</title>
+  <title>ISTE</title>
   {% comment %} Stylesheets Here {% endcomment %}
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -41,13 +41,13 @@
   <link href="{%static 'css/style.css' %}" rel="stylesheet">
 
   <!-- Sponsor-Styles -->
-  <link href="{%static 'css/sponsor-styles-2.css' %}" rel="stylesheet">
+  {% comment %} <link href="{%static 'css/sponsor-styles-2.css' %}" rel="stylesheet"> {% endcomment %}
 
   {% comment %} Event Styles {% endcomment %}
   <link href="{%static 'css/event-styles.css' %}" rel="stylesheet">
 
-  <!--Faq styles -->
-  <link href="{%static 'css/faq-styles.css' %}" rel="stylesheet">
+  {% comment %} <!--Faq styles -->
+  <link href="{%static 'css/faq-styles.css' %}" rel="stylesheet"> {% endcomment %}
 
   {% comment %} OC/EC Styles {% endcomment %}
   <link href="{%static 'css/oc-ec-styles.css' %}" rel="stylesheet">
@@ -92,29 +92,29 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <div class="nav-link-flex">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="/">Home</a>
               <span class="ball-animation"></span>
             </div>
-            <div class="nav-link-flex">
+            {% comment %} <div class="nav-link-flex">
               <a class="nav-link" href="#mu-sponsors">Sponsors</a>
               <span class="ball-animation"></span>
-            </div>
+            </div> {% endcomment %}
             <div class="nav-link-flex">
-              <a class="nav-link" href="#mu-events">Events</a>
+              <a class="nav-link" href="/events">Events</a>
               <span class="ball-animation"></span>
             </div>
-            <div class="nav-link-flex">
+            {% comment %} <div class="nav-link-flex">
               <a class="nav-link" href="#mu-faq">FAQ</a>
               <span class="ball-animation"></span>
-            </div>
+            </div> {% endcomment %}
             <div class="nav-link-flex">
-              <a class="nav-link" href="#mu-oc">Our Team</a>
+              <a class="nav-link" href="/our-team">Our Team</a>
               <span class="ball-animation"></span>
             </div>
-            <div class="nav-link-flex">
+            {% comment %} <div class="nav-link-flex">
               <a class="nav-link" href="#mu-contact">Contact</a>
               <span class="ball-animation"></span>
-            </div>
+            </div> {% endcomment %}
             <a class="nav-empty-space" href="#">Empty</a>
           </div>
         </div>
@@ -133,33 +133,30 @@
               <center>
                 <div data-aos="fade-up" data-aos-duration="2000">
                   <a class="mu-logo" href="#"><img class="sponsor-image"
-                      src="{%static 'img/logo red.png' %}" alt="logo img"></a>
+                      src="{%static 'img/LandingImg.png' %}" alt="logo img"></a>
                 </div>
               </center>
             </div>
             <!-- End center Logo -->
 
-            <div class="mu-hero-featured-content">
-              {% comment %} <div data-aos="fade-up" data-aos-duration="1800">
-                <h2>Website Tagline</h2>
-              </div> {% endcomment %}
+            {% comment %} <div class="mu-hero-featured-content">
               <div data-aos="fade-up" data-aos-duration="1500">
                 <p class="mu-event-date-line">23rd-26th March 2023</p>
-              </div>
+              </div> {% endcomment %}
 
-              <div class="mu-hero-register-button">
+              {% comment %} <div class="mu-hero-register-button">
               <div data-aos="fade-up" data-aos-duration="1300">
                 <button><a href="https://colloquiumform.onrender.com/">
                   <p class="mu-event-register-button"> > Register Now</p>
                 </a></button>
               </div>
-            </div>
+            </div> {% endcomment %}
 
-              <div class="mu-event-counter-area">
+              {% comment %} <div class="mu-event-counter-area">
                 <div id="mu-event-counter">
 
                 </div>
-              </div>
+              </div> {% endcomment %}
 
             </div>
           </div>
@@ -211,10 +208,8 @@
             </div>
           </div>
         </div>
-        <center>
-          <h2 class="about-header" style="margin-top:5rem;">About IETE</h2>
-        </center>
-        <div class="row">
+
+        {% comment %} <div class="row">
           <div class="about-row" style="grid-template-columns:1fr;">
             <div class="box wwa">
               <h2 class="about-title">IETE</h2>
@@ -222,14 +217,14 @@
               </span>
             </div>
           </div>
-        </div>
+        </div> {% endcomment %}
       </div>
     </section>
     <!-- End About -->
 
      
     {% comment %} Start Sponsors {% endcomment %}
-    <section id="mu-sponsors">
+    {% comment %} <section id="mu-sponsors">
       <div class="container" style="margin-bottom:0;padding-bottom:0;">
         <div class="row">
           <div class="col-md-12">
@@ -246,7 +241,6 @@
       </div>
       </div>
       <div class="sponsors-cards">
-        {% comment %} <div class="sponsors-head associate-sponsors" style="font-weight:bold;"></div> {% endcomment %}
         <div class="sponsors-grid grid-associate">
           <div class="sponsor-single">
             <div class="sponsor-image"
@@ -254,10 +248,6 @@
               <a href="https://www.axure.com/">
               <img src="{%static 'img/sponsors/axurelogo.png' %}" style="max-height:15rem;">
               </a>
-              {% comment %} <div
-                style="color:#7dd5f2;font-family:'HK Grotesk', 'Courier New', Courier, monospace;font-weight: 1000;font-size: 2rem;height:10%;">
-                Give My Certificate
-              </div> {% endcomment %}
             </div>
           </div>
           <div class="sponsor-single">
@@ -328,13 +318,13 @@
 
       </div>
       </div>
-    </section>
+    </section> {% endcomment %}
     {% comment %} End {% endcomment %}
 
     <!-- Start FAQ -->
 
   {% comment %} Events Start {% endcomment %}
-    <section id="mu-events">
+    {% comment %} <section id="mu-events">
       <center>
         <h2 class="about-header">Events</h2>
       </center>
@@ -371,7 +361,6 @@
               <div class="text--details">
                 <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
                 </p>
-                {% comment %} <a href="" class="text--link">Register Now !</a> {% endcomment %}
               </div>
             </div>
           </div>
@@ -443,17 +432,16 @@
               <div class="text--details">
                 <p class="text--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nulla cum impedit et nemo molestiae, suscipit animi officiis soluta natus, provident ab laudantium, amet dolorum.
                 </p>
-                {% comment %} <a href="" class="text--link">Register Now !</a> {% endcomment %}
               </div>
             </div>
           </div>
         </div>
       </ul>
     </div>
-    </section>
+    </section> {% endcomment %}
   {% comment %} End {% endcomment %}
 
-    <section id="mu-faq">
+    {% comment %} <section id="mu-faq">
       <div class="cont">
         <center>
           <h2 class="faq-title">FAQs</h2>
@@ -537,7 +525,7 @@
               </div>
             </div>
       </div>
-    </section>
+    </section> {% endcomment %}
     <!-- End FAQ -->
 
 
@@ -681,14 +669,14 @@
                 </li>
               </ul>
             </div>
-          <div class="footer-col">
+          {% comment %} <div class="footer-col">
             <h4>IETE</h4>
             <ul>
               <li>
                 <p>loren isump iete something here</p>
               </li>
             </ul>
-          </div>
+          </div> {% endcomment %}
             <div class="footer-col">
               <h4>Follow Us</h4>
               <div class="social-links">
@@ -743,8 +731,6 @@
   <script type="text/javascript" src="{%static 'js/timeline-script.js'%}"></script>
   {% comment %} jQuery {% endcomment %}
   <script type="text/javascript" src="{%static 'js/jquery.js'%}"></script>
-  {% comment %} Carousel.js {% endcomment %}
-  <script type="text/javascript" src="{%static 'js/carousel.js'%}"></script>
   {% comment %} Aos Script {% endcomment %}
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
