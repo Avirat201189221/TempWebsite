@@ -246,7 +246,7 @@ h6 {
   letter-spacing: 0px;
 }
 .nav-link:hover{
-  color: #b94a48;
+  color: #2d46b6;
 }
 
 .nav-empty-space {
@@ -441,11 +441,11 @@ button:focus {
   -webkit-background-size: cover;
   background-size: cover;
 }
-.bgimg .bg{
+.bgimg{
   min-width: 100vw;
   /* min-height: 100vh; */
   z-index: -9999;
-  opacity: 0.3;
+  opacity: 0.15;
   position: absolute;
 }
 .mu-hero-overlay {
@@ -455,6 +455,16 @@ button:focus {
   width: 100%;
   background: url();
   margin-bottom: 2rem;
+}
+.mu-hero-overlay .container{
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+}
+@media screen and (min-width:990px) {
+  .mu-hero-overlay{
+      min-height:100vh;
+  }
 }
 
 .mu-logo-area {
@@ -520,7 +530,7 @@ img {
   flex-direction: column;
   justify-content: center;
   float: left;
-  padding: 4rem 0rem 0rem;
+  padding: 10rem 0rem 0rem;
   width: 100%;
 }
 
