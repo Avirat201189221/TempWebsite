@@ -41,6 +41,12 @@
 /* body {
     height: 100%;
   } */
+.t-img{
+  z-index: -9999;
+  opacity: 0.15;
+  position: absolute;
+  min-height: 100vh;
+}
 .at-link {
   color: white;
 }
@@ -96,7 +102,7 @@
   background-position: center;
   /* border-radius: var(--spacing-l); */
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
   left: 0;
   position: absolute;
   right: 0;
