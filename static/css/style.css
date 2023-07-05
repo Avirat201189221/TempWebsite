@@ -448,13 +448,18 @@ button:focus {
   opacity: 0.15;
   position: absolute;
 }
+@media screen and (min-width:990px){
+  .bgimg img{
+    max-height: 100vh;
+  }
+}
 .mu-hero-overlay {
   display: inline;
   float: left;
   opacity: 0.94;
   width: 100%;
   background: url();
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 .mu-hero-overlay .container{
   display: flex;
