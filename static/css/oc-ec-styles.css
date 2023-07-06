@@ -43,12 +43,10 @@
   } */
 body{
   background-color: black;
-  /* background-image: url("https://raw.githubusercontent.com/Avirat201189221/TempWebsite/main/static/img/bluebg.jpg"); */
+
 }
 /* .team-bg {
-  z-index: -9999;
-  position: absolute;
-  opacity: 0.3;
+  background-image: url("https://raw.githubusercontent.com/Avirat201189221/TempWebsite/main/static/img/bluebg.jpg");
 } */
 .at-link {
   color: white;
