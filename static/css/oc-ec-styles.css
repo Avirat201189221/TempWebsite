@@ -45,6 +45,110 @@ body{
   background-color: black;
 
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99999999999999999999999999999;
+  background:rgba(0, 0, 0, 0.88);
+  justify-content: flex-end;
+  transition: 1s;
+}
+/* .navbar-toggler-icon{
+  background: url("https://raw.githubusercontent.com/Avirat201189221/Colloquium2023/main/static/img/white-nav-tog.png");
+} */
+.container-fluid {
+  padding: 0rem;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0px;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+.navbar-img {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0px;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+.navbar-toggler-icon{
+  background-image:url("")!important;
+}
+@media screen and (max-width:525px) {
+  .navbar-img{
+  max-width:0px;
+  }
+}
+.navbar-img img {
+  width: 8rem;
+}
+
+.nav-link-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+.navbar-collapse {
+  transition: 1s;
+}
+@media screen and (max-width: 760px) {
+  .nav-link-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.ball-animation {
+  width: 0px;
+  height: 0px;
+  transition: 0.25s;
+  background-color: rgb(148, 123, 59);
+  border-radius: 100px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin: 1.5rem 0.5rem 0rem 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0px;
+}
+.nav-link:hover{
+  color: #2d46b6;
+}
+
+.nav-empty-space {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-empty-space {
+    opacity: 0;
+    font-size: 0.25rem;
+  }
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media screen and (max-width: 450px) {
+  .navbar-brand img {
+    width: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: right;
+  }
+}
 /* .team-bg {
   background-image: url("https://raw.githubusercontent.com/Avirat201189221/TempWebsite/main/static/img/bluebg.jpg");
 } */
@@ -73,10 +177,22 @@ body{
   width: 100%;
   justify-items: center;
 }
+.card-grid1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-cont);
+  width: 100%;
+  justify-items: center;
+}
 
 @media (min-width: 540px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-grid1{
+    grid-template-columns: repeat(2, 1fr);   
   }
 }
 

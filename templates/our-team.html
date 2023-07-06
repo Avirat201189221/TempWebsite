@@ -25,51 +25,134 @@
     <link href="{%static 'css/oc-ec-styles.css' %}" rel="stylesheet">
   </head>
   <body style="background-color:black">
+    <nav class="navbar navbar-expand-lg mr-auto">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img class="dedbro"
+            src="{%static 'img/white-nav-toggler.png' %}" alt="logo img"></span>
+        </button>
+        <a class="navbar-img" href="#">
+          <img src="{%static 'img/istelogo_final_copy.png' %}" alt="iste logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="nav-link-flex">
+              <a class="nav-link" href="/">Home</a>
+              <span class="ball-animation"></span>
+            </div>
+            {% comment %} <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-sponsors">Sponsors</a>
+              <span class="ball-animation"></span>
+            </div> {% endcomment %}
+            <div class="nav-link-flex">
+              <a class="nav-link" href="/events">Events</a>
+              <span class="ball-animation"></span>
+            </div>
+            {% comment %} <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-faq">FAQ</a>
+              <span class="ball-animation"></span>
+            </div> {% endcomment %}
+            <div class="nav-link-flex">
+              <a class="nav-link" href="/our-team">Our Team</a>
+              <span class="ball-animation"></span>
+            </div>
+            {% comment %} <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-contact">Contact</a>
+              <span class="ball-animation"></span>
+            </div> {% endcomment %}
+            <a class="nav-empty-space" href="#">Empty</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <div class="team-bg">
     <section id="mu-OC/EC" style="padding-bottom:0px;">
-      <p class="invisible-text" style="opacity:0;pointer-events:none">Sample text Sample text Sample text Sample text
+      <p class="invisible-text" style="opacity:0;pointer-events:none;margin-bottom:10rem;">Sample text Sample text Sample text Sample text
         Sample text Sample text Sample text Sample text Sample textSample textSample textSample text SSample textSample
         textSample textSample textSample text</p>
       <section id="mu-oc" ></section>
       <center>
-        <h2 class="oc-title" style="font-size:4rem;margin-bottom:1rem;color:white">Our Team</h2>
+        <h2 class="oc-title" style="font-size:4rem;margin-bottom:5rem;color:white">Our Team</h2>
       </center>
+      <center>
+        <h2 class="oc-title" style="font-size:4rem;margin-bottom:1rem;color:white">Faculty Advisors</h2>
+      </center>
+      <div class="card-section">
+        <div class="card-grid1">
+          <div class="card" style="height:380px;width:268px;">
+            <div class="card__background"
+              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
+            </div>
+            <div class="card__content">
+              {% comment %} <div class="icons" style="right:-98px">
+                <a href="http://instagram.com/aniketsahran" style="color:white;"><i
+                    class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
+                    class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
+              </div> {% endcomment %}
+              <h3 class="card__heading">Dr. Rajesh Khanna</h3>
+              <h3 class="card__heading">Professor, ECED</h3>
+            </div>
+            <div class="blue-bg" style="background:blue;height:60px;width:268px">
+            </div>
+          </div>
+          <div class="card" style="height:380px;width:268px;">
+            <div class="card__background"
+              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
+            </div>
+            <div class="card__content">
+              {% comment %} <div class="icons" style="right:-98px">
+                <a href="http://instagram.com/aniketsahran" style="color:white;"><i
+                    class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
+                    class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
+              </div> {% endcomment %}
+              <h3 class="card__heading">Suman Bhullar</h3>
+              <h3 class="card__heading">Asst. Professor, EIC</h3>
+            </div>
+            <div class="blue-bg" style="background:blue;height:60px;width:268px">
+            </div>
+          </div>
+
+        </div>
+      </div>
       {% comment %} Card 1 {% endcomment %}
       <center><h2 class="oc-title" style="font-size:4rem;margin-bottom:1rem;color:white">Executive Board</h2></center>
       <div class="card-section">
         <div class="card-grid">
           <div class="card" style="height:380px;width:268px;">
             <div class="card__background"
-              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
+              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/OC_Vedant_Gadodia.jpg)">
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-98px">
+              {% comment %} <div class="icons" style="right:-98px">
                 <a href="http://instagram.com/aniketsahran" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
-              </div>
-              <h3 class="card__heading">Aniket Saharan</h3>
+              </div> {% endcomment %}
+              <h3 class="card__heading">Vedant Gadodia</h3>
               <h3 class="card__heading">General Secretary</h3>
             </div>
           </div>
 
           <div class="card" style="height:380px;width:268px;">
             <div class="card__background"
-              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Inaayat_Goyal.jpeg)">
+              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/TempWebsite/main/static/img/our-team/EB-EC/EB_Kinshuk_Kathpal.jpg)">
             </div>
             <div class="card__content">
-              {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-98px">
+              {% comment %} <div class="icons" style="right:-98px">
                 <a href="https://www.instagram.com/inaayat_goyal?r=nametag" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/inaayat-goyal" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
-                {% comment %} <a href="https://github.com/GKSibal" style="color:white;"><i class="fa fa-github"></i></a> {% endcomment %}
-              </div>
-              <h3 class="card__heading">Inaayat Goyal</h3>
+              </div> {% endcomment %}
+              <h3 class="card__heading">Kinshuk Kathpal</h3>
               <h3 class="card__heading">General Secretary</h3>
             </div>
           </div>
@@ -84,14 +167,14 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-91px">
+              {% comment %} <div class="icons" style="right:-91px">
                 <a href="https://www.instagram.com/anushka_dewangan/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/anushka-dewangan-2782631b7/" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/anushkadewangan" style="color:white;"><i class="fa fa-github"></i></a>
-              </div>
-              <h3 class="card__heading">Anushka Dewangan</h3>
+              </div> {% endcomment %}
+              <h3 class="card__heading">Pranav Modgil</h3>
               <h3 class="card__heading">Finance Secretary</h3>
             </div>
           </div>
