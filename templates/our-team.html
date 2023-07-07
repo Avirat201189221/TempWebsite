@@ -26,6 +26,8 @@
     <link href="{%static 'css/oc-ec-styles.css' %}" rel="stylesheet">
   </head>
   <body style="background-color:black">
+    <div class="scrolltotop"><img src="{%static 'img/up-arrow.svg'%}" /></div>
+    <script type="text/javascript" src="{%static 'js/scrollToTop.js'%}"></script>
     <nav class="navbar navbar-expand-lg mr-auto">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -77,45 +79,52 @@
         <h2 class="oc-title" style="font-size:4rem;margin-bottom:5rem;color:white">Our Team</h2>
         <p class="ot-text">"Coming together is a beginning, Keeping together is progress and working together is success." Meet the best team of determined, optimistic and amazing people coming together after doing a number of tasks while surviving in the different rounds of selections in which they have to showcase their skills and have to be unique and different from others. Carrying a brilliant perception of understanding things and working under the guidance of an exceptionally helpful and cooperative board, we came up with a team of such amazing, versatile and enthusiastic people who are looking forward to so many opportunities and a very bright future working together. With the support of all we grew not as a team but as a single unit, a family i.e one for all, all for one."</p>
       </center>
-      <center>
+      {% comment %} <center>
         <h2 class="oc-title" style="font-size:4rem;margin-bottom:1rem;color:white">Faculty Advisors</h2>
-      </center>
+      </center> {% endcomment %}
       <div class="card-section">
+
         <div class="card-grid1">
-          <div class="card" style="height:380px;width:268px;">
-            <div class="card__background"
-              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
-            </div>
-            <div class="card__content">
-              {% comment %} <div class="icons" style="right:-98px">
-                <a href="http://instagram.com/aniketsahran" style="color:white;"><i
-                    class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
-                    class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
-              </div> {% endcomment %}
-              <h3 class="card__heading">Dr. Rajesh Khanna</h3>
-              <h3 class="card__heading">Professor, ECED</h3>
-            </div>
-            <div class="blue-bg" style="background:blue;height:60px;width:268px">
+
+          <div class="card-flex">
+            <h2 class="oc-title" style="font-size:4rem;margin-bottom:2rem;color:white">President</h2>
+            <div class="card" style="height:380px;width:268px;">
+              <div class="card__background"
+                style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
+              </div>
+              <div class="card__content">
+                {% comment %} <div class="icons" style="right:-98px">
+                  <a href="http://instagram.com/aniketsahran" style="color:white;"><i
+                      class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
+                      class="fa fa-linkedin"></i></a>
+                  <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
+                </div> {% endcomment %}
+                <h3 class="card__heading">Dr. Rajesh Khanna</h3>
+                <h3 class="card__heading">Professor, ECED</h3>
+              </div>
             </div>
           </div>
-          <div class="card" style="height:380px;width:268px;">
-            <div class="card__background"
-              style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
-            </div>
-            <div class="card__content">
-              {% comment %} <div class="icons" style="right:-98px">
-                <a href="http://instagram.com/aniketsahran" style="color:white;"><i
-                    class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
-                    class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
-              </div> {% endcomment %}
-              <h3 class="card__heading">Suman Bhullar</h3>
-              <h3 class="card__heading">Asst. Professor, EIC</h3>
-            </div>
-            <div class="blue-bg" style="background:blue;height:60px;width:268px">
+
+          <div class="card-flex">
+            <h2 class="oc-title" style="font-size:4rem;margin-bottom:2rem;color:white"> Vice President</h2>
+            <div class="card" style="height:380px;width:268px;">
+              <div class="card__background"
+                style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/EB_Aniket_Saharan.png)">
+              </div>
+              <div class="card__content">
+                {% comment %} <div class="icons" style="right:-98px">
+                  <a href="http://instagram.com/aniketsahran" style="color:white;"><i
+                      class="fa fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/aniket-sahran-453586201/" style="color:white;"><i
+                      class="fa fa-linkedin"></i></a>
+                  <a href="https://github.com/aniketsahran" style="color:white;"><i class="fa fa-github"></i></a>
+                </div> {% endcomment %}
+                <h3 class="card__heading">Suman Bhullar</h3>
+                <h3 class="card__heading">Asst. Professor, EIC</h3>
+              </div>
+              <div class="blue-bg" style="background:blue;height:60px;width:268px">
+              </div>
             </div>
           </div>
 
@@ -965,6 +974,13 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+      {% comment %} jQuery {% endcomment %}
+  <script type="text/javascript" src="{%static 'js/jquery.js'%}"></script>
+  {% comment %} Aos Script {% endcomment %}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </div>
   </body>
 </html>

@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events</title>
+    <link rel="icon" type="image/x-icon" href="{%static 'img/istelogo.png'%}">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <link href="{%static 'css/oc-ec-styles.css' %}" rel="stylesheet">
+    <link href="{%static 'css/carousel.css' %}" rel="stylesheet">
+  </head>
+  <body style="background-color:black">
+    <div class="scrolltotop"><img src="{%static 'img/up-arrow.svg'%}" /></div>
+    <script type="text/javascript" src="{%static 'js/scrollToTop.js'%}"></script>
+    <nav class="navbar navbar-expand-lg mr-auto">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img class="dedbro"
+            src="{%static 'img/white-nav-toggler.png' %}" alt="logo img"></span>
+        </button>
+        <a class="navbar-img" href="#">
+          <img src="{%static 'img/istelogo_final_copy.png' %}" alt="iste logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <div class="nav-link-flex">
+              <a class="nav-link" href="/">Home</a>
+              <span class="ball-animation"></span>
+            </div>
+            {% comment %} <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-sponsors">Sponsors</a>
+              <span class="ball-animation"></span>
+            </div> {% endcomment %}
+            <div class="nav-link-flex">
+              <a class="nav-link" href="/events">Events</a>
+              <span class="ball-animation"></span>
+            </div>
+            {% comment %} <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-faq">FAQ</a>
+              <span class="ball-animation"></span>
+            </div> {% endcomment %}
+            <div class="nav-link-flex">
+              <a class="nav-link" href="/our-team">Our Team</a>
+              <span class="ball-animation"></span>
+            </div>
+            {% comment %} <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-contact">Contact</a>
+              <span class="ball-animation"></span>
+            </div> {% endcomment %}
+            <a class="nav-empty-space" href="#">Empty</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="team-bg">
+    <section id="mu-OC/EC" style="padding-bottom:0px;">
+      <p class="invisible-text" style="opacity:0;pointer-events:none;margin-bottom:10rem;">Sample text Sample text Sample text Sample text
+        Sample text Sample text Sample text Sample text Sample textSample textSample textSample text SSample textSample
+        textSample textSample textSample text</p>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    <footer class="footer" style="margin-top:10rem">
+      <center>
+        {% comment %} <h2 class="contact-title" style="font-size:4rem;">Contact Us</h2> {% endcomment %}
+      </center>
+      <div class="container" style="border-radius:0rem;padding-bottom:2rem">
+        <div class="row">
+          <div class="footer-col">
+            <h4>ISTE</h4>
+            <ul>
+              <li>
+                <p>ISTE is a well established technical society with a love of creating a cohesive environment to make
+                  learning fun, insightful and yet impactful. We have regularly been organizing events, seminars,
+                  workshops to see real-life impact.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li>
+              <p>ISTE is the abode to a passionate community that believes in harnessing the power of technology to
+                transform teaching and learning,accelerate innovation and solve tough problems in education.</p>
+            </li>
+          </ul>
+        </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/ISTE.Thapar"><i class="fa fa-facebook"></i></a>
+              <a href="https://github.com/ISTE-TIET"><i class="fa fa-github"></i></a>
+              <a href="https://www.instagram.com/iste_tiet"><i class="fa fa-instagram"></i></a>
+              <a href="mailto:iste@thapar.edu"><i class="fa fa-envelope contact"></i></a>
+              <a href="https://www.linkedin.com/company/iste-thapar-chapter/"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <center>
+        <p style="margin-top:2rem;">©️ Copyright ISTE TIET 2023.</p>
+      </center>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+      {% comment %} jQuery {% endcomment %}
+  <script type="text/javascript" src="{%static 'js/jquery.js'%}"></script>
+  {% comment %} Aos Script {% endcomment %}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </div>
+  </body>
+</html>
